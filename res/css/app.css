@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Christmas Sheep";
+    src: url('../fonts/Christmas\ Sheep.ttf');
+    font-weight: normal;
+}
+
+
+/* styles for tags */
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* styles for class */
+
+
+/* global class */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.my-auto {
+    margin: auto 0;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+
+/* end global class */
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 50%;
+    height: 80vh;
+    padding: 5px 20px;
+    background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-header {
+    width: 100%;
+    height: 10%;
+    margin-top: 10px;
+}
+
+.card-body {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.card-footer {
+    width: 100%;
+    height: 20%;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-family: "Christmas Sheep";
+    font-size: 2em;
+}
+
+.card-cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-summary {
+    font-size: 1.5em;
+    font-family: "Christmas Sheep";
+}
+
+
+/* media queries */
+
+@media (max-width: 650px) {
+    .font-h1-md {
+        font-size: 20px;
+    }
+    .font-md {
+        font-size: 15px;
+    }
+}
